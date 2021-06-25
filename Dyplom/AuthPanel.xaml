@@ -1,0 +1,30 @@
+﻿<Window x:Class="Dyplom.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dyplom"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Панель авторизации" Height="450" Width="800" Icon="user.png" ResizeMode="NoResize" ShowInTaskbar="False">
+    <Grid x:Name="mainRoot" Width="800" Height="425" Cursor="None" Background="#7608AA" Margin="0,0,-6.4,-5" VerticalAlignment="Center">
+        <Border MinWidth="400" Margin="15" Background="#ffffff" VerticalAlignment="Center" Padding="25" MaxWidth="500" CornerRadius="10">
+            <Border>
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="20" Color="LightGray" ShadowDepth="0"></DropShadowEffect>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="Приветствуем в панели авторизации!" TextAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0 0 0 20"></TextBlock>
+
+
+                    <TextBox x:Name="loginTextBox" materialDesign:HintAssist.Hint="Введите Ваш логин для входа" Cursor="Hand" Style="{StaticResource MaterialDesignFloatingHintTextBox}" ></TextBox>
+                    <PasswordBox x:Name="passTextBox" materialDesign:HintAssist.Hint="Введите Ваш пароль для входа" Cursor="Hand" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0,0,-0.4,0"></PasswordBox>
+                    <Grid>
+                        <Button x:Name="enterButton" HorizontalAlignment="Right" Content="Войти" Width="450" Margin="0,20,-0.4,20" Click="Button_Login_Click" Cursor="Hand"></Button>
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </Border>
+        <CheckBox x:Name="cbLeadTeachers" Content="Войти как классный руководитель" HorizontalAlignment="Left" Margin="176,289,0,0" VerticalAlignment="Top" Cursor="Hand" Checked="cbLeadTeachers_Checked"/>
+    </Grid>
+</Window>

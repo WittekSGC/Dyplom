@@ -1,0 +1,16 @@
+﻿<Window x:Class="Dyplom.ExcelExportPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dyplom"
+        mc:Ignorable="d"
+        Title="Вывод данных в Excel" Height="500" Width="400" Icon="user.png" Background="CadetBlue" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="SocialPassportExpBtn" Content="Социальный паспорт учащихся" HorizontalAlignment="Left" Margin="75,41,0,0" VerticalAlignment="Top" Width="250" Height="100" Background="CadetBlue" Click="SocialPassportExpBtn_Click" BorderBrush="CadetBlue"/>
+        <Button x:Name="NumbericStrenghtExpBtn" Content="Численный состав учащихся" HorizontalAlignment="Left" Margin="74,161,0,0" VerticalAlignment="Top" Width="250" Height="100" Background="CadetBlue" Click="NumbericStrenghtExpBtn_Click" BorderBrush="CadetBlue"/>
+        <Button x:Name="StudentDataExpBtn" Content="Данные об учащихся" HorizontalAlignment="Left" Margin="74,281,0,0" VerticalAlignment="Top" Width="250" Height="100" Background="CadetBlue" Click="StudentDataExpBtn_Click" BorderBrush="CadetBlue"/>
+        <Button x:Name="MainPanelBackBtn" Content="Назад" HorizontalAlignment="Left" Margin="10,433,0,0" VerticalAlignment="Top" Width="102" Height="27" Background="CadetBlue" Click="MainPanelBackBtn_Click" BorderBrush="CadetBlue"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="Dyplom.ManagementMenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dyplom"
+        mc:Ignorable="d"
+        Title="Меню адмистратора" Height="450" Width="400" Icon="user.png" Background="CadetBlue" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="UMPanelBtn" Content="Управление пользователями" HorizontalAlignment="Left" Margin="75,41,0,0" VerticalAlignment="Top" Width="250" Height="100" Background="CadetBlue" Click="UMPanelBtn_Click" BorderBrush="CadetBlue"/>
+        <Button x:Name="MainPanelBtn" Content="Основная панель" HorizontalAlignment="Left" Margin="74,161,0,0" VerticalAlignment="Top" Width="250" Height="100" Background="CadetBlue" Click="MainPanelBtn_Click" BorderBrush="CadetBlue"/>
+        <Button x:Name="StatisticPanelBtn" Content="Показать отчёты" HorizontalAlignment="Left" Margin="74,281,0,0" VerticalAlignment="Top" Width="250" Height="100" Background="CadetBlue" Click="StatisticPanelBtn_Click" BorderBrush="CadetBlue"/>
+
+    </Grid>
+</Window>
